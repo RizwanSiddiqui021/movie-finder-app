@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import search_logo from "/public/search.svg";
+import search_icon from "/public/search.svg";
 const Search = ({ searchTerm, setSearchTerm }) => {
   return (
     <div className="search">
       <div>
         {/* search-logo */}
-        <img src={search_logo} alt="Search" />
+        <img src={search_icon} alt="Search" />
 
         {/* search-input-field */}
         <input

@@ -3,6 +3,7 @@ import "./App.css";
 import Search from "./components/Search";
 import hero_image from "/public/hero.png";
 import Spinner from "./components/Spinner";
+import MovieCard from "./components/MovieCard";
 
 // api-variables
 const API_BASE_URL = "https://api.themoviedb.org/3";
@@ -72,9 +73,7 @@ const App = () => {
           ) : (
             <ul>
               {movieList.map((movie) => (
-                <p key={movie.id} className="text-white">
-                  {movie.title}
-                </p>
+                <MovieCard key={movie.id} movie={movie} />
               ))}
             </ul>
           )}
