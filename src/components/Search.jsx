@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import search_icon from "/public/search.svg";
+import search_icon from "../assets/search.svg";
 const Search = ({ searchTerm, setSearchTerm }) => {
   return (
     <div className="search">

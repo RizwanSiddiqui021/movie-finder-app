@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import empty_poster_logo from "/public/poster-unavailable.png";
-import star_icon from "/public/star.svg";
+import star_icon from "../assets/star.svg";
+import no_poster_logo from "../assets/no-movie.png";
 const MovieCard = ({
   movie: { title, vote_average, poster_path, original_language, release_date },
 }) => {
@@ -10,7 +10,7 @@ const MovieCard = ({
         src={
           poster_path
             ? `https://image.tmdb.org/t/p/w500/${poster_path}`
-            : { empty_poster_logo }
+            : `${no_poster_logo}`
         }
         alt={title}
       />
